@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>registration</title>
+<script>
+function validate()
+{
+var username = document.forms["myForm"]["EmailID"].value;
+var password = document.forms["myForm"]["password"].value;
+if ( username == "user@gmail.com" && password == "123456")
+{
+alert ("Login successfully");
+
+
+}
+}
+</script>
+</head>
+
+<body><center>
+<table><form name="myForm" action="C:\Users\q\Desktop\login\dashboard.html" onsubmit="return validate()" method="post">
+       
+<tr><td>EmailID</td> <td><input type="text" name="EmailID"></td></tr>
+<tr><td>Password</td><td><input type="Passsord"name="password"></td></tr><tr></tr>
+<tr><td><br>
+<input type="submit" value="Submit">
+</td>
+</form>
+<form action="registration.html"><td><br>
+<input type="submit" value="registration"></td></tr></form>
+</table>
+</center>
+</body>
+</html>
